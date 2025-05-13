@@ -130,4 +130,4 @@ moore_mealy_simulator/
 
 ## 👨‍💻 License
 
-[MIT-License](License)
+[MIT-LICENSE](./LICENSE)
