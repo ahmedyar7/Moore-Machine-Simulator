@@ -17,7 +17,7 @@ A Python-based simulator for Moore and Mealy Machines with a GUI built using **P
     <a href="https://www.github.com/HumayunJunaid">
         <img alt="Static Badge" src="https://img.shields.io/badge/Humayun%20Junaid-%20%23320954?style=for-the-badge&logo=github">
     </a>
-    <a href="https://www.github.com/YounusKhan">
+    <a href="https://github.com/DevStudent101-yk">
         <img alt="Static Badge" src="https://img.shields.io/badge/Younus%20Khan-%20%234b9965?style=for-the-badge&logo=github">
     </a>
 </span>
