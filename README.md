@@ -1,4 +1,4 @@
-# Moore and Mealy Machine Simulator
+# Moore Machine Simulator
 
 A Python-based simulator for Moore and Mealy Machines with a GUI built using **PyQt5**. This tool allows users to define finite-state machines, add states and transitions, simulate input strings, and visualize the automata using **Graphviz**.
 
