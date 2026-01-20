@@ -2,8 +2,9 @@
 
 import sys
 
-from PyQt5.QtGui import QPixmap, QColor, QPalette
-from PyQt5.QtWidgets import (
+from PyQt6.QtCore import Qt
+from PyQt6.QtGui import QPixmap, QColor, QPalette
+from PyQt6.QtWidgets import (
     QMainWindow,
     QLabel,
     QLineEdit,
@@ -37,19 +38,19 @@ class FSMGui(QMainWindow):
         """This would set the application mode to the dark theme"""
         # Set the application to dark mode
         palette = QPalette()
-        palette.setColor(QPalette.Window, QColor(33, 33, 33))  # Dark background
-        palette.setColor(QPalette.WindowText, QColor(255, 255, 255))  # White text
-        palette.setColor(QPalette.Base, QColor(50, 50, 50))  # Dark base for text input
-        palette.setColor(QPalette.AlternateBase, QColor(33, 33, 33))
-        palette.setColor(QPalette.ToolTipBase, QColor(255, 255, 255))
-        palette.setColor(QPalette.ToolTipText, QColor(255, 255, 255))
-        palette.setColor(QPalette.Button, QColor(60, 60, 60))  # Button background
+        palette.setColor(QPalette.ColorRole.Window, QColor(33, 33, 33))  # Dark background
+        palette.setColor(QPalette.ColorRole.WindowText, QColor(255, 255, 255))  # White text
+        palette.setColor(QPalette.ColorRole.Base, QColor(50, 50, 50))  # Dark base for text input
+        palette.setColor(QPalette.ColorRole.AlternateBase, QColor(33, 33, 33))
+        palette.setColor(QPalette.ColorRole.ToolTipBase, QColor(255, 255, 255))
+        palette.setColor(QPalette.ColorRole.ToolTipText, QColor(255, 255, 255))
+        palette.setColor(QPalette.ColorRole.Button, QColor(60, 60, 60))  # Button background
         palette.setColor(
-            QPalette.ButtonText, QColor(255, 255, 255)
+            QPalette.ColorRole.ButtonText, QColor(255, 255, 255)
         )  # Button text color
-        palette.setColor(QPalette.Highlight, QColor(78, 154, 255))  # Highlighted items
+        palette.setColor(QPalette.ColorRole.Highlight, QColor(78, 154, 255))  # Highlighted items
         palette.setColor(
-            QPalette.HighlightedText, QColor(255, 255, 255)
+            QPalette.ColorRole.HighlightedText, QColor(255, 255, 255)
         )  # Highlighted text color
 
         self.setPalette(palette)
@@ -211,4 +212,4 @@ def main():
     app = QApplication(sys.argv)
     window = FSMGui()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

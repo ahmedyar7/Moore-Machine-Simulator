@@ -1,6 +1,6 @@
 # Moore Machine Simulator
 
-A Python-based simulator for Moore and Mealy Machines with a GUI built using **PyQt5**. This tool allows users to define finite-state machines, add states and transitions, simulate input strings, and visualize the automata using **Graphviz**.
+A Python-based simulator for Moore and Mealy Machines with a GUI built using **PyQt6**. This tool allows users to define finite-state machines, add states and transitions, simulate input strings, and visualize the automata using **Graphviz**.
 
 ## Contributors🙌
 
@@ -30,7 +30,7 @@ A Python-based simulator for Moore and Mealy Machines with a GUI built using **P
 - Simulate **input strings** and view step-by-step output.
 - Generate and view **state transition graphs**.
 - Switch between **Moore and Mealy** machine modes.
-- User-friendly GUI built with **PyQt5**.
+- User-friendly GUI built with **PyQt6**.
 - Graph rendering using **Graphviz**.
 
 ---
@@ -38,10 +38,47 @@ A Python-based simulator for Moore and Mealy Machines with a GUI built using **P
 ## 🛠️ Technologies Used
 
 - **Python 3.10+**
-- **PyQt5** – GUI framework
+- **PyQt6** – GUI framework
 - **Graphviz** – For visualizing the automata
 - **Qt Designer** (optional) – To design the UI
 - **OOP** and modular architecture
+
+---
+
+## 🚀 Installation & Setup
+
+### Prerequisites
+- Python 3.10 or higher
+- pip (Python package manager)
+
+### Step 1: Clone the Repository
+```bash
+git clone https://github.com/yourusername/Moore-Machine-Simulator.git
+cd Moore-Machine-Simulator
+```
+
+### Step 2: Create a Virtual Environment
+```bash
+# On Windows
+python -m venv venv
+.\venv\Scripts\activate
+
+# On macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### Step 3: Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### Step 4: Run the Application
+```bash
+python main.py
+```
+
+The GUI will launch, and you can start defining your Moore or Mealy machines.
 
 ---
 
