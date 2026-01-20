@@ -2,6 +2,7 @@
 
 # graph_generator.py
 import os
+from datetime import datetime
 from graphviz import Digraph
 
 
@@ -13,8 +14,13 @@ class GraphGenerator:
         self.image_dir = "machine_images"
         os.makedirs(self.image_dir, exist_ok=True)  # Safe creation
 
-    def generate_graph(self, filename="moore_machine"):
+    def generate_graph(self, filename=None):
         """This function would generate the graph and place it into right directory"""
+        # Generate unique filename with timestamp if not provided
+        if filename is None:
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            filename = f"moore_machine_{timestamp}"
+        
         # Full path including the directory
         full_path = os.path.join(self.image_dir, filename)
 
