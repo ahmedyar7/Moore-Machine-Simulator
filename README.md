@@ -1,37 +1,41 @@
 # Moore Machine Simulator
 
-A Python-based simulator for Moore and Mealy Machines with a GUI built using **PyQt6**. This tool allows users to define finite-state machines, add states and transitions, simulate input strings, and visualize the automata using **Graphviz**.
+A Python-based simulator for **Moore and Mealy Machines** with a graphical interface built using **PyQt6**. This tool allows users to define finite-state machines, add states and transitions, simulate input strings, and visualize automata using **Graphviz**.
 
-## Contributors🙌
+---
+
+## Contributors 🙌
 
 <span>
     <a href="https://www.github.com/ahmedyar7">
-        <img alt="Static Badge" src="https://img.shields.io/badge/Ahmed%20Yar-black?style=for-the-badge&logo=github">
+        <img alt="Ahmed Yar" src="https://img.shields.io/badge/Ahmed%20Yar-black?style=flat-for-the-badge&logo=github">
     </a>
     <a href="https://www.github.com/SameerTalreja">
-        <img alt="Static Badge" src="https://img.shields.io/badge/Sameer%20Talreja-%20%2329424d?style=for-the-badge&logo=github">
+        <img alt="Sameer Talreja" src="https://img.shields.io/badge/Sameer%20Talreja-%2329424d?style=flat-for-the-badge&logo=github">
     </a>
     <a href="https://www.github.com/AbulBasit">
-        <img alt="Static Badge" src="https://img.shields.io/badge/Abul%20Basit-%20%232a294d?style=for-the-badge&logo=github">
+        <img alt="Abul Basit" src="https://img.shields.io/badge/Abul%20Basit-%232a294d?style=flat-for-the-badge&logo=github">
     </a>
-    <a href="https://www.github.com/HumayunJunaid">
-        <img alt="Static Badge" src="https://img.shields.io/badge/Humayun%20Junaid-%20%23320954?style=for-the-badge&logo=github">
+    <a href="https://www.github.com/">
+        <img alt="Humayun Junaid" src="https://img.shields.io/badge/Humayun%20Junaid-%23320954?style=flat-for-the-badge&logo=github">
     </a>
     <a href="https://github.com/DevStudent101-yk">
-        <img alt="Static Badge" src="https://img.shields.io/badge/Younus%20Khan-%20%234b9965?style=for-the-badge&logo=github">
+        <img alt="Younus Khan" src="https://img.shields.io/badge/Younus%20Khan-%234b9965?style=flat-for-the-badge&logo=github">
     </a>
 </span>
 
+---
+
 ## ✨ Features
 
-- Define **states** with outputs (Moore) or transitions with outputs (Mealy).
-- Set the **initial state**.
-- Add transitions dynamically through the GUI.
-- Simulate **input strings** and view step-by-step output.
-- Generate and view **state transition graphs**.
-- Switch between **Moore and Mealy** machine modes.
-- User-friendly GUI built with **PyQt6**.
-- Graph rendering using **Graphviz**.
+- Define **states** with outputs (Moore) or **transitions with outputs** (Mealy)
+- Set and update the **initial state**
+- Add transitions dynamically via GUI
+- Simulate **input strings** with step-by-step output
+- Generate and visualize **state transition graphs**
+- Switch between **Moore and Mealy** machine modes
+- Clean, user-friendly GUI built using **PyQt6**
+- Graph visualization powered by **Graphviz**
 
 ---
 
@@ -39,52 +43,69 @@ A Python-based simulator for Moore and Mealy Machines with a GUI built using **P
 
 - **Python 3.10+**
 - **PyQt6** – GUI framework
-- **Graphviz** – For visualizing the automata
-- **Qt Designer** (optional) – To design the UI
-- **OOP** and modular architecture
+- **Graphviz** – Automata visualization
+- **Qt Designer** (optional)
+- **Object-Oriented Programming (OOP)**
 
 ---
 
 ## 🚀 Installation & Setup
 
 ### Prerequisites
+
 - Python 3.10 or higher
 - pip (Python package manager)
+- Graphviz (installed and added to system PATH)
+
+Download Graphviz from:
+👉 [https://graphviz.org/download/](https://graphviz.org/download/)
+
+---
 
 ### Step 1: Clone the Repository
+
 ```bash
-git clone https://github.com/yourusername/Moore-Machine-Simulator.git
+git clone https://github.com/ahmedyar7/Moore-Machine-Simulator.git
 cd Moore-Machine-Simulator
 ```
 
-### Step 2: Create a Virtual Environment
+---
+
+### Step 2: Create and Activate a Virtual Environment
+
 ```bash
-# On Windows
+# Windows
 python -m venv venv
 .\venv\Scripts\activate
 
-# On macOS/Linux
+# macOS / Linux
 python3 -m venv venv
 source venv/bin/activate
 ```
 
+---
+
 ### Step 3: Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
+---
+
 ### Step 4: Run the Application
+
 ```bash
 python main.py
 ```
 
-The GUI will launch, and you can start defining your Moore or Mealy machines.
+The GUI will launch, allowing you to define and simulate Moore or Mealy machines.
 
 ---
 
 ## 📸 Screenshots
 
-| Moore Machine Simulator                   | Graph View                                   |
+| Simulator UI                              | Graph Visualization                          |
 | ----------------------------------------- | -------------------------------------------- |
 | ![UI Screenshot](./assets/imgs/image.png) | ![Graph](./machine_images/moore_machine.png) |
 
@@ -94,77 +115,56 @@ The GUI will launch, and you can start defining your Moore or Mealy machines.
 
 ### Moore Machine
 
-- Outputs are associated **with states**.
-- Transition: `A --0--> B`
-- Output string is based on the **states visited**.
+- Outputs are associated **with states**
+- Example transition: `A --0--> B`
+- Output depends on the **states visited**
 
 ### Mealy Machine
 
-- Outputs are associated **with transitions**.
-- Transition: `A --0/1--> B`
-- Output string is based on **input symbols** and transitions.
+- Outputs are associated **with transitions**
+- Example transition: `A --0/1--> B`
+- Output depends on **input symbols and transitions**
 
 ---
 
-## 🧪 Simulation Example
+## 🧪 Simulation Example (Moore Machine)
 
-For a Moore machine:
+- **States**:
+    - A (Output = 0)
+    - B (Output = 1)
 
-- States: A (Output=0), B (Output=1)
-- Initial: A
-- Transitions:
-  - A --0--> B
-  - B --1--> A
-- Input: `01`
-- Output: `0 1 0`
+- **Initial State**: A
+- **Transitions**:
+    - A --0--> B
+    - B --1--> A
 
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Python 3.10+
-- pip
-- graphviz
-- Install the graphviz and add to the system environment Variables
-
-```
-https://graphviz.org/download/
-```
-
-### Install Dependencies
-
-```bash
-pip install pyqt5 graphviz
-```
-
-### Run the App
-
-```bash
-python main.py
-```
+- **Input**: `01`
+- **Output**: `0 1 0`
 
 ---
 
 ## 📂 Project Structure
 
 ```
-moore_mealy_simulator/
+Moore-Machine-Simulator/
 │
-├── main.py                 # Main GUI launcher
-├── moore_machine.py        # Moore machine logic
-├── mealy_machine.py        # Mealy machine logic
-├── graph_generator.py      # Graphviz logic
-├── simulator_controller.py # Central logic to handle events
-├── ui_mainwindow.ui        # Qt Designer file
+├── main.py                  # Application entry point
+├── moore_machine.py         # Moore machine logic
+├── mealy_machine.py         # Mealy machine logic
+├── graph_generator.py       # Graphviz rendering logic
+├── simulator_controller.py  # Core controller logic
+├── ui_mainwindow.ui         # Qt Designer UI file
 ├── README.md
-└── assets/imgs/
-    ├── image.png
+└── assets/
+    └── imgs/
+        └── image.png
 ```
 
 ---
 
 ## 👨‍💻 License
 
-[MIT-LICENSE](./LICENSE)
+This project is licensed under the **MIT License**.
+See the [LICENSE](./LICENSE) file for details.
+
+---
