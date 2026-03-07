@@ -6,23 +6,40 @@ A Python-based simulator for **Moore and Mealy Machines** with a graphical inter
 
 ## Contributors 🙌
 
-<span>
-    <a href="https://www.github.com/ahmedyar7">
-        <img alt="Ahmed Yar" src="https://img.shields.io/badge/Ahmed%20Yar-black?style=flat-for-the-badge&logo=github">
-    </a>
-    <a href="https://www.github.com/SameerTalreja">
-        <img alt="Sameer Talreja" src="https://img.shields.io/badge/Sameer%20Talreja-%2329424d?style=flat-for-the-badge&logo=github">
-    </a>
-    <a href="https://www.github.com/AbulBasit">
-        <img alt="Abul Basit" src="https://img.shields.io/badge/Abul%20Basit-%232a294d?style=flat-for-the-badge&logo=github">
-    </a>
-    <a href="https://www.github.com/">
-        <img alt="Humayun Junaid" src="https://img.shields.io/badge/Humayun%20Junaid-%23320954?style=flat-for-the-badge&logo=github">
-    </a>
-    <a href="https://github.com/DevStudent101-yk">
-        <img alt="Younus Khan" src="https://img.shields.io/badge/Younus%20Khan-%234b9965?style=flat-for-the-badge&logo=github">
-    </a>
-</span>
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://github.com/ahmedyar7">
+        <img src="https://github.com/ahmedyar7.png" width="100px;" alt="Ahmed Yar"/><br />
+        <sub><b>Ahmed Yar</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/SameerTalreja">
+        <img src="https://github.com/SameerTalreja.png" width="100px;" alt="Sameer Talreja"/><br />
+        <sub><b>Sameer Talreja</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/AbulBasit">
+        <img src="https://github.com/BasitAchak.png" width="100px;" alt="Abul Basit"/><br />
+        <sub><b>Abul Basit</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/">
+        <img src="https://github.com/github.png" width="100px;" alt="Humayun Junaid"/><br />
+        <sub><b>Humayun Junaid</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/DevStudent101-yk">
+        <img src="https://github.com/DevStudent101-yk.png" width="100px;" alt="Younus Khan"/><br />
+        <sub><b>Younus Khan</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 ---
 
